@@ -1,0 +1,4 @@
+name: BlockWorld
+version: '1.0'
+main: com.blockworld.blockWorld.BlockWorld
+api-version: '1.20'
