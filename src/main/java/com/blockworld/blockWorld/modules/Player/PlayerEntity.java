@@ -1,12 +1,13 @@
-package com.blockworld.blockWorld.entities;
+package com.blockworld.blockWorld.modules.Player;
 
-import com.blockworld.blockWorld.game.Stats;
 
-public class Player {
+import com.blockworld.blockWorld.modules.Stats.Stats;
+
+public class PlayerEntity {
     private final org.bukkit.entity.Player bukkitPlayer;
     private Stats stats;
 
-    public Player(org.bukkit.entity.Player bukkitPlayer) {
+    public PlayerEntity(org.bukkit.entity.Player bukkitPlayer) {
         this.bukkitPlayer = bukkitPlayer;
         this.stats = Stats.createDefault();
     }

@@ -2,7 +2,8 @@ package com.blockworld.blockWorld;
 
 import com.blockworld.blockWorld.core.config.Config;
 import com.blockworld.blockWorld.core.database.Database;
-import com.blockworld.blockWorld.events.OnPlayerJoin;
+import com.blockworld.blockWorld.modules.Player.events.OnPlayerJoin;
+import com.blockworld.blockWorld.modules.Stats.StatsGUI;
 import com.blockworld.blockWorld.utils.Logger;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -26,6 +27,7 @@ public final class BlockWorld extends JavaPlugin {
         Init();
 
         getServer().getPluginManager().registerEvents(new OnPlayerJoin(), this);
+        getServer().getPluginManager().registerEvents(new StatsGUI(), this);
     }
 
     @Override

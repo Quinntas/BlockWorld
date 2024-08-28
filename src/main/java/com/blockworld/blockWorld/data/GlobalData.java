@@ -1,17 +1,18 @@
 package com.blockworld.blockWorld.data;
 
-import com.blockworld.blockWorld.entities.Player;
+import com.blockworld.blockWorld.modules.Player.PlayerEntity;
 
+import java.util.HashMap;
 import java.util.Map;
 
 public class GlobalData {
-    static Map<String, Player> players;
+    static Map<String, PlayerEntity> players = new HashMap<>();
 
-    public static Player getPlayer(String id) {
+    public static PlayerEntity getPlayer(String id) {
         return players.get(id);
     }
 
-    public static void addPlayer(Player player) {
+    public static void addPlayer(PlayerEntity player) {
         players.put(player.getBukkitPlayer().getUniqueId().toString(), player);
     }
 }

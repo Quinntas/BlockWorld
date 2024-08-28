@@ -1,6 +1,6 @@
-package com.blockworld.blockWorld.models;
+package com.blockworld.blockWorld.modules.Stats;
 
-public class Stats {
+public class StatsModel {
     private int id;
 
     private int vigor;

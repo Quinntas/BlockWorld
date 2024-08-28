@@ -1,4 +1,5 @@
-package com.blockworld.blockWorld.game;
+package com.blockworld.blockWorld.modules.Stats;
+
 
 public class Stats {
     private int vigor;
